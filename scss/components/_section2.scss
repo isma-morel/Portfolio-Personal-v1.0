@@ -1,0 +1,20 @@
+/*Sobre Mi*/
+#sobremi {
+    background-color: nth($colors , 1 );
+    .container-sobremi {
+        height: 100vh;
+        .text-wrap {
+            color: nth($colors , 2 );
+            div h2 {
+                font-family: $my-font;
+                font-size: nth($fontsize , 2 );
+                font-weight: bold;
+            }
+            div h2 p {
+                font-family: $my-font;
+                font-size: nth($fontsize , 3 );
+            }
+        }
+    }
+}
+

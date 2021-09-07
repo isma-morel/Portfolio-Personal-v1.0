@@ -1,0 +1,61 @@
+/*Skills*/
+#skills {
+    .tittle-skills {
+        background-color: nth($colors , 1 );
+        height: 20vh;
+        padding-left: 3vw;
+        padding-top: 10vh;
+        h2 {
+            font-size: nth($fontsize , 2 );
+            font-family: $my-font;
+            color: nth($colors , 2 );
+        }
+    }
+    .container-skills {
+        height: 80vh;
+        .container-img-skills {
+            padding-top: 20vh;
+            .hover-skills {
+                height: 25%;
+                width: 25%;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+/*Fin Skills*/
+
+/*Skills Mobile*/
+
+@media screen and (max-width:400px) {
+    #skills {
+        .tittle-skills {
+            h2 {
+                font-size: nth($fontsize , 5 );
+            }
+        }
+        .container-skills {
+            .container-img-skills {
+                padding-top: 5vh;
+                flex-direction: column;
+                align-items: center;
+                .hover-skills {
+                    height: 35%;
+                    width: 35%;
+                    padding: 10px;
+                    margin: 10px;
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Fin Skills Mobile*/

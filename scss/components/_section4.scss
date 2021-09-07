@@ -1,0 +1,66 @@
+/*Proyectos*/
+
+#proyectos {
+    .tittle-proyectos {
+        background-color: nth($colors , 1 );
+        height: 20vh;
+        padding-left: 3vw;
+        padding-top: 10vh;
+        h2 {
+            font-size: nth($fontsize , 2 );
+            font-family: $my-font;
+            color: nth($colors , 2 );
+        }
+    }
+    .container-cards {
+        height: 80vh;
+        padding-top: 10vh;
+        justify-content: space-around;
+        .card-prj {
+            background-color: nth($colors , 2 );
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
+            .card-body {
+                h5, p, a {
+                    font-family: $my-font;
+                    color: nth($colors , 1);
+                    font-size: nth($fontsize , 3 );
+                }
+            }
+        }
+    }
+}
+
+/*Fin Proyectos*/
+
+/*Proyectos Mobile*/
+
+
+@media screen and (max-width: 1000px) {
+    #proyectos {
+        .tittle-proyectos {
+            height: 10%;
+            h2 {
+                font-size: nth($fontsize , 5 );
+            }
+        }
+        .container-cards {
+            height: 100%;
+            padding-top: 2vh;
+            .card-1 {
+                padding: 1rem;
+                .card-prj {
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/*Fin Proyectos Mobile*/

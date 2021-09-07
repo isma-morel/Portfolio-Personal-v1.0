@@ -1,0 +1,263 @@
+/* Colors list */
+/* Fontsize list */
+/*Nav Princ*/
+@import url("https://use.typekit.net/txm4vpn.css");
+.nav-princ {
+  background-color: #000;
+}
+.nav-princ .list-nav a {
+  font-family: "aileron", sans-serif;
+  font-size: 24px;
+  color: #fbfdfe;
+  transition: all 0.3s linear;
+}
+.nav-princ .list-nav a:hover {
+  color: #737373;
+}
+
+/*Fin Nav Princ*/
+/* Nav mobile */
+@media screen and (max-width: 800px) {
+  .container-nav {
+    display: none;
+  }
+
+  .nav-burguer {
+    background-color: #000;
+    display: block !important;
+  }
+  .nav-burguer .navbar-toggler {
+    background-color: #000;
+    border: 0.1rem solid #737373;
+  }
+
+  .nav-mobile {
+    background-color: #000;
+  }
+  .nav-mobile ul {
+    list-style: none;
+  }
+  .nav-mobile ul li a {
+    font-family: "aileron", sans-serif;
+    color: #fbfdfe;
+  }
+}
+/*Fin nav mobile*/
+/*Inicio*/
+.logo-img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 1vh;
+  left: 5vw;
+  z-index: 10000;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+.logo-img:hover {
+  transform: rotate(360deg);
+}
+
+#inicio {
+  background-color: #fbfdfe;
+  background-image: url("https://i.ibb.co/Lt9SLrz/pexels-pixabay-373076.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#inicio .container-inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#inicio .container-inicio .tittle-inicio h1 {
+  font-family: "aileron", sans-serif;
+  color: #000;
+  font-size: 60px;
+  padding-left: 5%;
+  padding-top: 5%;
+  font-weight: bold;
+}
+#inicio .container-inicio .subtittles-inicio {
+  font-family: "aileron", sans-serif;
+  color: #737373;
+  font-size: 20px;
+  padding-left: 5%;
+}
+
+/*Fin Inicio*/
+/*Inicio mobile*/
+@media screen and (max-width: 800px) {
+  .logo-img {
+    display: none;
+  }
+
+  #inicio {
+    background-image: url("https://i.ibb.co/Lt9SLrz/pexels-pixabay-373076.jpg");
+  }
+}
+/*Fin Inicio mobile*/
+/*Sobre Mi*/
+#sobremi {
+  background-color: #000;
+}
+#sobremi .container-sobremi {
+  height: 100vh;
+}
+#sobremi .container-sobremi .text-wrap {
+  color: #fbfdfe;
+}
+#sobremi .container-sobremi .text-wrap div h2 {
+  font-family: "aileron", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+}
+#sobremi .container-sobremi .text-wrap div h2 p {
+  font-family: "aileron", sans-serif;
+  font-size: 20px;
+}
+
+/*Skills*/
+#skills .tittle-skills {
+  background-color: #000;
+  height: 20vh;
+  padding-left: 3vw;
+  padding-top: 10vh;
+}
+#skills .tittle-skills h2 {
+  font-size: 42px;
+  font-family: "aileron", sans-serif;
+  color: #fbfdfe;
+}
+#skills .container-skills {
+  height: 80vh;
+}
+#skills .container-skills .container-img-skills {
+  padding-top: 20vh;
+}
+#skills .container-skills .container-img-skills .hover-skills {
+  height: 25%;
+  width: 25%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#skills .container-skills .container-img-skills .hover-skills:hover {
+  transform: scale(1.2);
+}
+
+/*Fin Skills*/
+/*Skills Mobile*/
+@media screen and (max-width: 400px) {
+  #skills .tittle-skills h2 {
+    font-size: 35px;
+  }
+  #skills .container-skills .container-img-skills {
+    padding-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills .container-skills .container-img-skills .hover-skills {
+    height: 35%;
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+  }
+  #skills .container-skills .container-img-skills .hover-skills:hover {
+    transform: none;
+  }
+}
+/*Fin Skills Mobile*/
+/*Proyectos*/
+#proyectos .tittle-proyectos {
+  background-color: #000;
+  height: 20vh;
+  padding-left: 3vw;
+  padding-top: 10vh;
+}
+#proyectos .tittle-proyectos h2 {
+  font-size: 42px;
+  font-family: "aileron", sans-serif;
+  color: #fbfdfe;
+}
+#proyectos .container-cards {
+  height: 80vh;
+  padding-top: 10vh;
+  justify-content: space-around;
+}
+#proyectos .container-cards .card-prj {
+  background-color: #fbfdfe;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#proyectos .container-cards .card-prj:hover {
+  transform: scale(1.1);
+}
+#proyectos .container-cards .card-prj .card-body h5, #proyectos .container-cards .card-prj .card-body p, #proyectos .container-cards .card-prj .card-body a {
+  font-family: "aileron", sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+/*Fin Proyectos*/
+/*Proyectos Mobile*/
+@media screen and (max-width: 1000px) {
+  #proyectos .tittle-proyectos {
+    height: 10%;
+  }
+  #proyectos .tittle-proyectos h2 {
+    font-size: 35px;
+  }
+  #proyectos .container-cards {
+    height: 100%;
+    padding-top: 2vh;
+  }
+  #proyectos .container-cards .card-1 {
+    padding: 1rem;
+  }
+  #proyectos .container-cards .card-1 .card-prj:hover {
+    transform: none;
+  }
+}
+/*Fin Proyectos Mobile*/
+/*Contacto*/
+#contacto .tittle-contacto {
+  background-color: #000;
+  height: 20vh;
+  width: 100%;
+  padding-left: 3vw;
+  padding-top: 10vh;
+}
+#contacto .tittle-contacto h2 {
+  font-size: 42px;
+  font-family: "aileron", sans-serif;
+  color: #fbfdfe;
+}
+#contacto .container-redes {
+  height: 80vh;
+  padding-top: 20vh;
+}
+#contacto .container-redes .hover-contacto {
+  width: 80%;
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+}
+#contacto .container-redes .hover-contacto:hover {
+  transform: scale(1.2);
+}
+
+/*Fin Contacto*/
+/*Contacto Mobile*/
+@media screen and (max-width: 800px) {
+  #contacto .tittle-contacto h2 {
+    font-size: 35px;
+  }
+  #contacto .container-redes {
+    padding-top: 5vh;
+  }
+  #contacto .container-redes .hover-contacto:hover {
+    transform: none;
+  }
+}
+/*Fin Contacto Mobile*/
+
+/*# sourceMappingURL=style.css.map */

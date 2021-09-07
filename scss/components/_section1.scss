@@ -1,0 +1,54 @@
+/*Inicio*/
+
+.logo-img {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 1vh;
+    left: 5vw;
+    z-index: 10000;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+#inicio {
+    background-color: nth( $colors, 2 );
+    background-image: url("https://i.ibb.co/Lt9SLrz/pexels-pixabay-373076.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container-inicio {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .tittle-inicio h1 {
+            font-family: $my-font;
+            color: nth($colors , 1 );
+            font-size: nth($fontsize , 1 );
+            padding-left: 5%;
+            padding-top: 5%;
+            font-weight: bold;
+        }
+        .subtittles-inicio {
+            font-family: $my-font;
+            color: nth($colors , 3 );
+            font-size: nth($fontsize , 3 );
+            padding-left: 5%;
+        }
+    }
+}
+/*Fin Inicio*/
+
+/*Inicio mobile*/
+@media screen and (max-width: 800px) {
+    .logo-img {
+        display: none;
+    }
+    #inicio {
+        background-image: url("https://i.ibb.co/Lt9SLrz/pexels-pixabay-373076.jpg");
+    }
+}
+/*Fin Inicio mobile*/

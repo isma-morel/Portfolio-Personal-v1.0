@@ -1,0 +1,51 @@
+/*Contacto*/
+
+#contacto {
+    .tittle-contacto {
+        background-color: nth($colors , 1 );
+        height: 20vh;
+        width: 100%;
+        padding-left: 3vw;
+        padding-top: 10vh;
+        h2 {
+            font-size: nth($fontsize , 2 );
+            font-family: $my-font;
+            color: nth($colors , 2 );
+        }
+    }
+    .container-redes {
+        height: 80vh;
+        padding-top: 20vh;
+        .hover-contacto {
+            width: 80%;
+            transition: all .5s ease-in-out;
+            padding: 1rem;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+/*Fin Contacto*/
+
+/*Contacto Mobile*/
+
+@media screen and (max-width:800px) {
+    #contacto {
+        .tittle-contacto {
+            h2 {
+                font-size: nth($fontsize , 5 );
+            }
+        }
+        .container-redes {
+            padding-top: 5vh;
+            .hover-contacto {
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+/*Fin Contacto Mobile*/

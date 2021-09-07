@@ -1,0 +1,45 @@
+/*Nav Princ*/
+.nav-princ {
+    background-color: nth($colors , 1 );
+    .list-nav {
+        a {
+            font-family: $my-font;
+            font-size: nth($fontsize , 4);
+            color: nth($colors, 2);
+            transition: all 0.3s linear;
+            &:hover {
+                color: nth($colors, 3); 
+            }
+        }
+    }
+}
+/*Fin Nav Princ*/
+
+/* Nav mobile */
+@media screen and (max-width: 800px) {
+    .container-nav {
+        display: none;
+    }
+    .nav-burguer {
+        background-color: nth($colors , 1 );
+        display: block !important;
+        .navbar-toggler {
+            background-color: nth($colors , 1 );
+            border: 0.1rem solid nth($colors, 3);
+        }
+    }
+    .nav-mobile {
+        background-color: nth($colors , 1 );
+        ul {
+            list-style: none;
+            li {
+                a {
+                    font-family: $my-font;
+                    color: nth($colors , 2);
+                }
+            }
+        }
+    }
+}
+
+/*Fin nav mobile*/
